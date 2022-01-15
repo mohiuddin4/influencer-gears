@@ -305,11 +305,11 @@ footer p{
     }
     .banner-right{
         order: 1;
-        width: 300px;
+        width: 100%;
     }
     .banner-left{
         order: 2;
-        width: 300px;
+        width: 100%;
     }
     .banner-right img{
        width: 100%;
@@ -335,7 +335,7 @@ footer p{
         grid-template-columns: 1fr;
     }
     .bounas-section-details{
-        width: 300px;
+        width: 100%;
     }
    
     footer{
