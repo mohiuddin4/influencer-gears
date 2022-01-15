@@ -22,6 +22,7 @@ nav{
 .navigation-var{
     display: inline-flex;
     align-items: center;
+    
 }
 .navigation-var ul{
     display: flex;
@@ -52,6 +53,8 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .banner-left h1{
     font-size: 52px;
@@ -68,12 +71,100 @@ nav{
     align-items: center;
     border-radius: 50px;
     border: 1px solid wheat;
+    transition-duration: .5s;
 }
 .button-arrow .fa-arrow-right{
     padding-left: 10px;
     padding-top: -5px;
 }
+.banner-button:hover{
+    background-color: grey;
+    
+}
 .banner-right img{
    width: 100%;
    border-radius: 50px;
+}
+
+
+/* hr-row -logos */
+
+
+.hr-raw{
+    border: 1px solid grey;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+/* poouler product */
+
+.populer-title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+.populer-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    gap: 50px;
+   
+}
+.product-item{
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    line-height: 1em;
+    border-radius: 5px;
+}
+.porduct-img img{
+    width: 300px;
+    height: 260px;
+    border-radius: 5px;
+}
+.product-name h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.product-price h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.rating .feild{
+    height: 16px;
+    width: 16px;
+    color:#FB8200;
+}
+.rating .emty{
+    height: 16px;
+    width: 16px;
+    color: rgba(128, 128, 128, 0.76);
+}
+.rating .rating-parsent{
+   padding-left: 15px;
+   font-weight: 700;
+}
+.product-discreption p{
+    font-size: 14px;
+    font-weight: 700;
+}
+.see-more{
+    text-align: end;
+    margin-top: 30px;
+}
+.see-more a{
+    color:#E02C6D;
+    text-decoration: none;
+    padding: 20px;
+    align-items: center;
+    
+}
+.see-more-arrow{
+    padding-left: 10px;
 }
