@@ -80,7 +80,9 @@ nav{
     align-items: center;
     border-radius: 50px;
     border: 1px solid wheat;
-    transition-duration: .5s;
+    
+    
+    
 }
 .button-arrow .fa-arrow-right{
     padding-left: 10px;
@@ -88,6 +90,8 @@ nav{
 }
 .banner-button:hover{
     background-color: grey;
+    transform: scale(1.1);
+    transition: tranform 0.3s;
     
 }
 .banner-right img{
@@ -135,6 +139,11 @@ nav{
     line-height: 1em;
     border-radius: 5px;
     margin: 0 auto;
+    overflow: hidden;
+}
+.product-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 .porduct-img img{
@@ -213,6 +222,8 @@ nav{
 }
 .bounas-section-details button:hover{
     background-color: gray;
+    transform: scale(1.1);
+    transition: transform .3s ease-in;
 }
 .bounas-button-arrow{
     padding-left: 10px;
@@ -250,6 +261,28 @@ footer p{
 /* responsive */
 
 
+/* tab-responsive */
+
+
+@media only screen and (max-width:992px) {
+    main{
+        width: 100%;
+    }
+    
+    .populer-products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 0px;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+
+
+}
 
 /* mobile responsive */
 
@@ -306,27 +339,4 @@ footer p{
     footer{
         width: 100%;
     }
-}
-
-/* tab-responsive */
-
-
-@media only screen and (max-width:992px) {
-    main{
-        width: 100%;
-    }
-    
-    .populer-products{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px 0px;
-    }
-    .logos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-        
-    }
-
-
 }
